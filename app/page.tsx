@@ -9,7 +9,7 @@ import '@/assets/css/reset.css'
 
 export default function Home() {
   return (
-    <div >
+    <div className={styles.Page}>
 
     </div>
   )
