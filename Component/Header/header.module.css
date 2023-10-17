@@ -1,0 +1,57 @@
+.header {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shadow {
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.4;
+  background-color: black;
+  position: fixed;
+  z-index: 999;
+}
+.name {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.NameSpan {
+  font-size: 12px;
+  font-family: "幼圆", Arial, sans-serif;
+  color: #000;
+}
+.left {
+  width: 160px;
+  height: 100%;
+  z-index: 999;
+  margin-right: 20px;
+}
+.ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.li {
+  float: left;
+}
+.iconfont {
+  display: inline-block;
+  vertical-align: middle;
+}
+.page {
+  font-size: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.page:hover {
+  color: rebeccapurple;
+}
