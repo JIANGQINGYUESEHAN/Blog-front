@@ -6,9 +6,6 @@ import Footer from '@/Component/Footer'
 import styles from './LayOut.module.css'
 import Head from 'next/head'
 import Home from './page'
-import FlyBird from '@/Component/FlyBird'
-
-
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,14 +17,16 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children }: { children: React.ReactNode }) {
 
-
+  function btnhandle() { }
   return (
     <html lang="en">
       <body className={styles.LayOut}>
         <Header />
+        <div className={styles.divs}>
+          <button onClick={btnhandle}>按钮</button>
+        </div>
 
         <Home />
-
         <Footer />
       </body>
 

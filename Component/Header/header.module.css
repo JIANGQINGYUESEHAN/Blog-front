@@ -1,5 +1,5 @@
 .header {
-  height: 50px;
+  height: 60px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -10,20 +10,24 @@
   width: 100%;
   overflow: hidden;
   opacity: 0.4;
-  background-color: black;
   position: fixed;
+  transition: background-color 1s ease; /* 1s 是过渡时间，可以根据需要调整 */
   z-index: 999;
+}
+.shadow:hover {
+  background-color: black;
 }
 .name {
   width: 100px;
   height: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 .NameSpan {
-  font-size: 12px;
+  font-size: 16px;
   font-family: "幼圆", Arial, sans-serif;
   color: #000;
 }
@@ -48,7 +52,7 @@
   vertical-align: middle;
 }
 .page {
-  font-size: 10px;
+  font-size: 12px;
   display: inline-block;
   vertical-align: middle;
 }

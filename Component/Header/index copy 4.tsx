@@ -34,7 +34,6 @@ export default function Header() {
 
                     {count.map((item, index) => {
                         return <li className={styles.li} key={item.id}>
-                            {/* <span className='iconfont' style={{ fontSize: '12px' }}>{item.code}</span> */}
                             <span className='iconfont'>{item.code}</span>
                             <span className={styles.page}>{item.text}</span>
                         </li>
