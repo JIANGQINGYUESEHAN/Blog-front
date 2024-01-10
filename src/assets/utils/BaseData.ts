@@ -1,0 +1,1 @@
+export const img = 'http://zy.img.qiuyue.space/QQ%E5%9B%BE%E7%89%8720230516221819.jpg'

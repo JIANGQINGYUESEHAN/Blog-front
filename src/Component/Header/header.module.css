@@ -1,0 +1,78 @@
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: center;
+}
+
+.shadow {
+  height: 70px;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.4;
+  position: fixed;
+  transition: background-color 1s ease; /* 1s 是过渡时间，可以根据需要调整 */
+  z-index: 999;
+}
+.shadow:hover {
+  background-color: black;
+}
+.name {
+  width: 100px;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.NameSpan {
+  font-size: 16px;
+  font-family: "幼圆", Arial, sans-serif;
+  color: #000;
+}
+.left {
+  flex: 1;
+  z-index: 999;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.li {
+  width: 100px;
+  height: 40px;
+  background-color: rgba(86, 159, 232, 0.5);
+  border-radius: 10px;
+  margin: 0px 10px;
+  line-height: 40px;
+  align-items: center;
+}
+.lia {
+  width: 100px;
+  height: 40px;
+  /* background-color: rgba(221, 227, 233, 0.5); */
+  border-radius: 10px;
+  margin: 0px 10px;
+  line-height: 40px;
+  align-items: center;
+}
+
+.page {
+  vertical-align: middle;
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  vertical-align: middle;
+  color: grey;
+}
+
+.iconfonta {
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* .page:hover {
+  color: rebeccapurple;
+} */

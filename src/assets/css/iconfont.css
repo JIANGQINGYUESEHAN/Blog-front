@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "iconfont";
+  src: url("../font_icon/iconfont.ttf") format("truetype"); /* 字体文件的路径 */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 12px; /* 调整图标大小 */
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

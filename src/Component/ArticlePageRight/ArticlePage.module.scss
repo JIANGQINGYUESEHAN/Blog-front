@@ -1,0 +1,22 @@
+.ArticlePage {
+  width: 700px;
+  height: 300px;
+  background: radial-gradient(
+    circle at 7.2% 13.6%,
+    rgb(37, 249, 245) 0%,
+    rgb(8, 70, 218) 90%
+  );
+  margin: 30px auto;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  .left {
+    flex: 1;
+    height: 100%;
+    background-color: aliceblue;
+  }
+  .right {
+    flex: 1;
+    height: 100%;
+  }
+}

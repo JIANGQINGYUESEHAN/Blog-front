@@ -1,0 +1,79 @@
+.Auth {
+  width: 300px;
+  height: 220px;
+  background: linear-gradient(
+    58.2deg,
+    rgba(40, 91, 212, 0.73) -3%,
+    rgba(171, 53, 163, 0.45) 49.3%,
+    rgba(255, 204, 112, 0.37) 97.7%
+  );
+
+  border-radius: 10px;
+  padding-top: 10px;
+  z-index: 9;
+  opacity: 1;
+
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.3s; /* 动画过渡效果 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 默认阴影 */
+
+  .content {
+    width: 80px;
+    height: 80px;
+
+    .image {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      transition: all 2s ease;
+    }
+  }
+  .all {
+    width: 200px;
+    height: 40px;
+
+    margin-top: 5px;
+    display: flex;
+    .article {
+      z-index: 99;
+      width: 100px;
+
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .classification {
+      z-index: 99;
+      width: 100px;
+
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .bottom {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+}
+.Auth:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* 点击时阴影变大 */
+}
+.Auth .content .image:hover {
+  transform: rotate(360deg);
+  z-index: 999;
+}
