@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4336818 */
+  src: url('iconfont.woff2?t=1705323650858') format('woff2'),
+       url('iconfont.woff?t=1705323650858') format('woff'),
+       url('iconfont.ttf?t=1705323650858') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon_blog:before {
+  content: "\e600";
+}
+
+.icon-icon_add_vote:before {
+  content: "\e601";
+}
+
+.icon-icon_activity:before {
+  content: "\e602";
+}
+
+.icon-icon_forum:before {
+  content: "\e603";
+}
+
+.icon-icon_home:before {
+  content: "\e604";
+}
+
+.icon-icon_find_friend:before {
+  content: "\e605";
+}
+
+.icon-icon_feel:before {
+  content: "\e606";
+}
+
+.icon-icon_collections:before {
+  content: "\e607";
+}
+
+.icon-icon_groups:before {
+  content: "\e608";
+}
+
+.icon-icon_location:before {
+  content: "\e609";
+}
+
+.icon-icon_ad:before {
+  content: "\e60a";
+}
+
+.icon-icon_setting_1:before {
+  content: "\e60b";
+}
+
+.icon-icon_historys:before {
+  content: "\e60c";
+}
+
+.icon-icon_short_videos:before {
+  content: "\e60d";
+}
+
+.icon-icon_donation:before {
+  content: "\e60e";
+}
+
+.icon-icon_shop:before {
+  content: "\e60f";
+}
+
+.icon-icon_games:before {
+  content: "\e610";
+}
+
+.icon-icon_reminders:before {
+  content: "\e611";
+}
+

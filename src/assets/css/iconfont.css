@@ -10,3 +10,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@font-face {
+  font-family: "iconfonta";
+  src: url("../fonta/iconfont.ttf") format("truetype"); /* 字体文件的路径 */
+}
+
+.iconfont {
+  font-family: "iconfonta" !important;
+  font-size: 12px; /* 调整图标大小 */
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

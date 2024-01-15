@@ -42,7 +42,7 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div className={styles.page}>
       <div className={styles.divs}>
         <button onClick={btnHandle}>滚动</button>
       </div>
@@ -62,7 +62,8 @@ export default function Home() {
         <div className={styles.right}>
           <Title />
           <ArticlePageLeft />
-
+          <ArticlePageLeft />
+          <ArticlePageLeft />
         </div>
       </div>
     </div>
