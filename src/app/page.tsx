@@ -4,10 +4,11 @@ import styles from './page.module.scss';
 import '@/assets/css/reset.css';
 import Auth from '@/Component/Auth';
 import Detail from '@/Component/Detail';
-import Article from '@/Component/Article';
+import Article from '@/Component/ArticleItem';
 import Title from '@/Component/Title';
 
 import ArticlePageLeft from '@/Component/ArticlePageLeft';
+import ArticlePageRight from '@/Component/ArticlePageRight';
 
 export default function Home() {
   const targetPosition = 650; // 将目标位置设置为距顶部400像素
@@ -63,7 +64,7 @@ export default function Home() {
           <Title />
           <ArticlePageLeft />
           <ArticlePageLeft />
-          <ArticlePageLeft />
+          <ArticlePageRight />
         </div>
       </div>
     </div>
