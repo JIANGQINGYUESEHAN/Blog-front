@@ -9,11 +9,23 @@ interface IProps {
 
 const Article: FC<IProps> = () => {
     return <div className={style.page}>
+        <div className={style.input}>
 
-        <div className={style.background}>
             <input type="text" className={style.inputBox} placeholder="请输入激活码并按Enter回车..." />
         </div>
-        <div className={style.content}> </div>
+        <div className={style.content}>
+            <ArticleItem />
+
+            <ArticleItem />
+            <ArticleItem />
+            <ArticleItem />
+            <ArticleItem />
+
+            <ArticleItem />
+            <ArticleItem />
+            <ArticleItem />
+        </div>
+
     </div>
 }
 
