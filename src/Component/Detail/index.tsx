@@ -27,10 +27,9 @@ const Detail: FC<IProps> = (props) => {
             </div>
             {/*文章类别 */}
             <div className={styles.article}>
-                <div className={styles.div1}>
-                    {/* <span> TypeScript </span>&nbsp; <span>(1)</span> */}
-                    {children}
-                </div>
+
+                {children}
+
 
             </div>
         </ div>
