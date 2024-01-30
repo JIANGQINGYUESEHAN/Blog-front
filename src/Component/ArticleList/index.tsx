@@ -7,7 +7,8 @@ interface IProps {
 
 const ArticleList: FC<IProps> = () => {
     return <div className={styles.ArticleList}>
-        <span className='title'>ArticleList</span>
+        <span className='title'>ARTICLELIST (0篇)</span>
+
     </div>
 }
 

@@ -10,6 +10,7 @@ import Title from '@/Component/Title';
 import ArticlePageLeft from '@/Component/ArticlePageLeft';
 import ArticlePageRight from '@/Component/ArticlePageRight';
 import ArticleList from '@/Component/ArticleList';
+import PageList from '@/Component/PageList';
 
 export default function Home() {
   const targetPosition = 650; // 将目标位置设置为距顶部400像素
@@ -52,12 +53,20 @@ export default function Home() {
         <div className={styles.left}>
           <Auth />
           <Detail name={`分类`} iconfont='&#xe68b;' >
-
+            <ArticleList />
+            <ArticleList />
+            <ArticleList />
+            <ArticleList />
+            <ArticleList />
+            <ArticleList />
           </Detail>
 
-          <Detail name={`推荐文章`} iconfont='&#xe6a5;' height={360} backgroundColor={`#bebeee`}>
+          <Detail name={`推荐文章`} iconfont='&#xe6a5;' height={500} backgroundColor={`#bebeee`}>
 
-            <ArticleList />
+            <PageList />
+            <PageList />
+            <PageList />
+            <PageList />
           </Detail>
         </div>
         <div className={styles.right}>

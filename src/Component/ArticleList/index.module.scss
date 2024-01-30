@@ -1,9 +1,17 @@
 .ArticleList {
   height: 30px;
   width: 100%;
-  background-color: red;
-  padding-left: 10px;
+
+  padding-left: 20px;
   line-height: 30px;
+  margin: 5px 0px;
+  cursor: pointer;
+  transition: color 0.5s, transform 0.5s; /* 过渡效果 */
   .title {
+    text-transform: uppercase;
   }
+}
+.ArticleList:hover {
+  color: #ffa51d; /* 改变颜色 */
+  transform: translateX(10px); /* 向左移动 */
 }
