@@ -27,7 +27,7 @@
       white-space: nowrap;
       letter-spacing: 0.15em;
       /* Make the animation loop infinitely */
-      animation: siz 6s steps(360) forwards infinite;
+      animation: siz 5s steps(60) forwards infinite;
     }
 
     @keyframes siz {

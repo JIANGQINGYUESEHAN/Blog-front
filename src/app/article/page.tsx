@@ -28,7 +28,7 @@ const Article: FC<IProps> = () => {
 
 
     // 假设有一个总的文章列表 allArticles、
-    let allArticles = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    let allArticles = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     const currentArticles = allArticles.slice(indexOfFirstItem, indexOfLastItem);
 
 
