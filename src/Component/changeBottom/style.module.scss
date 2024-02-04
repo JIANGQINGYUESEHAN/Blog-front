@@ -1,0 +1,21 @@
+.paginationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // 添加更多样式来匹配您的设计需求...
+
+  button {
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 15px; // 根据需要调整为圆角
+    // 根据需要添加hover效果等...
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5; // 可以调整为你喜欢的任何值
+    }
+  }
+}

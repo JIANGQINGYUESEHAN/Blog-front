@@ -1,13 +1,18 @@
-import React, { memo } from 'react'
+"use client"
+import React, { memo, useState } from 'react'
 import type { FC, ReactNode } from 'react'
 import style from './article.module.scss'
 import ArticleItem from '@/Component/ArticleItem'
+import ChangeBottom from '@/Component/changeBottom'
 
 interface IProps {
     children?: ReactNode
 }
 
 const Article: FC<IProps> = () => {
+    const [itemsPerPage, setItemsPerPage] = useState(4)
+
+
     return <div className={style.page}>
         <div className={style.input}>
 
@@ -20,12 +25,13 @@ const Article: FC<IProps> = () => {
             <ArticleItem />
             <ArticleItem />
             <ArticleItem />
+            <ArticleItem />
 
-            <ArticleItem />
-            <ArticleItem />
-            <ArticleItem />
+
         </div>
-
+        <div className={style.change}>
+            <ChangeBottom totalItems={10} itemsPerPage={itemsPerPage} />
+        </div>
     </div>
 }
 
