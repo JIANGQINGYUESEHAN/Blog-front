@@ -8,10 +8,14 @@ import { FireOutlined, FormOutlined, GlobalOutlined, ScheduleOutlined } from '@a
 
 interface IProps {
     children?: ReactNode,
+    article: number
+
+
 
 }
 
-const ArticleItem: FC<IProps> = (props) => {
+const ArticleItem: FC<IProps> = ({ article }) => {
+    console.log(article);
 
     return <div className={styles.ArticleItem}>
         <div className={styles.header}>
@@ -23,7 +27,7 @@ const ArticleItem: FC<IProps> = (props) => {
         </div>
         <div className={styles.content}>
             <span className={styles.Title}>
-                在使用 git 时，偶尔会遇到这个提示，每次都忘记怎么处理。这不，今天又遇到了，于是就记录下，免得下次又要查找了。
+                {article}  在使用 git 时，偶尔会遇到这个提示，每次都忘记怎么处理。这不，今天又遇到了，于是就记录下，免得下次又要查找了。
             </span>
         </div>
         <div className={styles.icona}>

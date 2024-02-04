@@ -10,17 +10,23 @@ interface IProps {
 }
 
 const Article: FC<IProps> = () => {
-    const [itemsPerPage, setItemsPerPage] = useState(4)
+    const [itemsPerPage,] = useState(4)
     const [currentPage, setCurrentPage] = useState(1);
 
 
     const handleChangePage = (newPage: number) => {
+        console.log(newPage);
+
         setCurrentPage(newPage);
     };
 
     // 计算当前显示的文章项
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    console.log(indexOfFirstItem);
+    console.log(indexOfFirstItem);
+
+
     // 假设有一个总的文章列表 allArticles、
     let allArticles = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     const currentArticles = allArticles.slice(indexOfFirstItem, indexOfLastItem);
@@ -33,7 +39,7 @@ const Article: FC<IProps> = () => {
         </div>
         <div className={style.content}>
             {currentArticles.map((article, index) => (
-                <ArticleItem key={index} />
+                <ArticleItem key={index} article={article} />
             ))}
         </div>
         <div className={style.change}>

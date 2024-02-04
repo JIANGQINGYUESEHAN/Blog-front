@@ -10,17 +10,17 @@ interface IProps {
     onChangePage: (newPage: number) => void
 }
 
-const ChangeBottom: FC<IProps> = ({ totalItems, itemsPerPage }) => {
-    const [currentPage, setCurrentPage] = useState(1);
+const ChangeBottom: FC<IProps> = ({ totalItems, itemsPerPage, onChangePage, currentPage }) => {
+
     const totalPages = Math.ceil(totalItems / itemsPerPage);
 
 
     const goToPreviousPage = () => {
-        setCurrentPage((prev) => Math.max(prev - 1, 1));
+        onChangePage(Math.max(currentPage - 1, 1));
     };
 
     const goToNextPage = () => {
-        setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+        onChangePage(Math.min(currentPage + 1, totalPages));
     };
 
     return (
