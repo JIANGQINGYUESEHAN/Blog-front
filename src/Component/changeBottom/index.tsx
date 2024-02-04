@@ -5,13 +5,15 @@ import style from './style.module.scss'
 interface IProps {
     children?: ReactNode,
     totalItems: number,
-    itemsPerPage: number
+    itemsPerPage: number,
+    currentPage: number,
+    onChangePage: (newPage: number) => void
 }
 
 const ChangeBottom: FC<IProps> = ({ totalItems, itemsPerPage }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const totalPages = Math.ceil(totalItems / itemsPerPage);
-    function CountPages() { }
+
 
     const goToPreviousPage = () => {
         setCurrentPage((prev) => Math.max(prev - 1, 1));

@@ -11,6 +11,19 @@ interface IProps {
 
 const Article: FC<IProps> = () => {
     const [itemsPerPage, setItemsPerPage] = useState(4)
+    const [currentPage, setCurrentPage] = useState(1);
+
+
+    const handleChangePage = (newPage: number) => {
+        setCurrentPage(newPage);
+    };
+
+    // 计算当前显示的文章项
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    // 假设有一个总的文章列表 allArticles、
+    let allArticles = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    const currentArticles = allArticles.slice(indexOfFirstItem, indexOfLastItem);
 
 
     return <div className={style.page}>
@@ -19,18 +32,15 @@ const Article: FC<IProps> = () => {
             <input type="text" className={style.inputBox} placeholder="请输入激活码并按Enter回车..." />
         </div>
         <div className={style.content}>
-            <ArticleItem />
-
-            <ArticleItem />
-            <ArticleItem />
-            <ArticleItem />
-            <ArticleItem />
-            <ArticleItem />
-
-
+            {currentArticles.map((article, index) => (
+                <ArticleItem key={index} />
+            ))}
         </div>
         <div className={style.change}>
-            <ChangeBottom totalItems={10} itemsPerPage={itemsPerPage} />
+            <ChangeBottom totalItems={10} itemsPerPage={itemsPerPage}
+                currentPage={currentPage}
+                onChangePage={handleChangePage}
+            />
         </div>
     </div>
 }
