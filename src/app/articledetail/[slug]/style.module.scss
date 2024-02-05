@@ -11,17 +11,72 @@
       height: 100%;
     }
     .articleDetailIcon {
+      font-size: 12px;
       width: 800px;
-      height: 140px;
-      background-color: rgba(0, 0, 0, 0.4);
+      height: 90px;
+      //   background-color: rgba(0, 0, 0, 0.4);
       position: absolute;
       left: 40%;
       bottom: 0px;
       transform: translateX(-50%);
-
+      display: flex;
+      //   align-items: center; // 垂直居中
+      padding: 6px 10px; // 假设文字两侧有一定间隔
+      flex-direction: column;
       .Title {
         color: white;
         font-size: 24px;
+        white-space: nowrap; // 确保文字在一行显示
+        overflow: hidden; // 隐藏超出容器的文字
+        text-overflow: ellipsis; // 使用省略号表示隐藏的文字
+        width: 100%; // 确保Title元素占满.articleDetailIcon的宽度
+      }
+      .icon {
+        width: 100%;
+        height: 30px;
+
+        margin-top: 20px;
+        display: flex;
+        .iconItem {
+          width: 100px;
+          height: 30px;
+
+          margin-right: 10px;
+          display: flex;
+          color: white;
+
+          line-height: 25px;
+          justify-content: center;
+          font-size: 12px;
+          .iconCtrl {
+            line-height: 25px;
+            text-align: center;
+            width: 25px;
+            height: 25px;
+            background-color: #007efc;
+            border-radius: 50%;
+          }
+        }
+        .dateItem {
+          width: 160px;
+          height: 30px;
+
+          margin-right: 10px;
+          display: flex;
+          color: white;
+
+          line-height: 25px;
+          justify-content: center;
+          font-size: 12px;
+          .iconCtrl {
+            text-align: center;
+            width: 25px;
+            line-height: 25px;
+            height: 25px;
+            background-color: #007efc;
+            border-radius: 50%;
+          }
+        }
       }
     }
   }
