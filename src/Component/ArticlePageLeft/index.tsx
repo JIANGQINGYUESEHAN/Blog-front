@@ -25,8 +25,6 @@ const ArticlePageLeft: FC<IProps> = () => {
 
                     <span className={styles.icon}><ScheduleOutlined rev={undefined} /></span>
                     <span className={styles.date}>2023-12-25 17:29:30</span>
-
-
                 </div>
                 <div className={styles.Title}>
                     <span className={styles.Title} >Element-UI 控制台报错 Prop being mutated: "placement"</span>
