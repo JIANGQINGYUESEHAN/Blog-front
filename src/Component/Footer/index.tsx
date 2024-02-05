@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './style.module.scss'
-export default function div() {
+export default function footer() {
     return (
         <div className={style.siteFooter}>
             <div className={style.TitleContent}>
