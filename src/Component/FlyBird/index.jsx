@@ -1,15 +1,16 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import BIRDS from "vanta/dist/vanta.birds.min";
-import styles from "./FlyBird.module.css";
-export default function FlyBird() {
-  const [vantaEffect, setVantaEffect] = useState(null);
-  const myRef = useRef(null);
+import styles from "./FlyBird.module.scss";
+const FlyBird = (props) => {
+  const [vantaEffect, setVantaEffect] = useState(0);
+  const vantaRef = useRef(null);
+
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
         BIRDS({
-          el: myRef.current,
+          el: vantaRef.current,
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
@@ -17,17 +18,17 @@ export default function FlyBird() {
           minWidth: 200.0,
           scale: 1.0,
           scaleMobile: 1.0,
-          backgroundColor: 0xebeef2,
+          color: 0x2f2fe3,
+          // backgroundColor: 0x0,
         })
       );
     }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
   }, [vantaEffect]);
   return (
-    <div ref={myRef} className={styles.bird}>
-      Foreground content goes here
-    </div>
+    <>
+      <div ref={vantaRef} className={styles.bird}></div>;
+    </>
   );
-}
+};
+
+export default FlyBird;

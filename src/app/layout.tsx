@@ -6,6 +6,10 @@ import '@/assets/css/iconfont.css'
 import Footer from '@/Component/Footer'
 import Header from '@/Component/Header'
 import styles from './LayOut.module.css'
+import Head from 'next/head'
+import Script from 'next/script'
+import FlyBird from '@/Component/FlyBird'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -20,13 +24,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+
       <body className={inter.className}>
+
         <div >
+
           <Header />
+
           {children}
+          {/* </FlyBird> */}
           <Footer />
+
+
+
+
+
         </div>
       </body>
+      <script src='https://yanyunfeng.com/scripts/three.min.js' async></script>
     </html>
   )
 }
