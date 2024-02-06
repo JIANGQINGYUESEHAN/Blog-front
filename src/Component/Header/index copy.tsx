@@ -19,16 +19,15 @@ export default function Header() {
         link: '/article'
     }, {
         id: 3,
-        code: '\ue688',
-        text: '我',
-        link: '/about'
-    },
-    {
-        id: 4,
         code: '\uE687',
-        text: ' 关于',
+        text: '我',
         link: '/our'
 
+    }, {
+        id: 4,
+        code: '\ue688',
+        text: '关于',
+        link: '/about'
     }, {
         id: 5,
         code: '\ue688',
@@ -36,20 +35,20 @@ export default function Header() {
         link: '/project'
     }])
     //记录index
-    const [indexOne, ClickIndex] = useState(0)
+    const [indexOne, Clickindex] = useState(0)
     function ClickSkip(one: any) {
 
-        ClickIndex(one)
+        Clickindex(one)
     }
     function NavigationItem(item: any, index: number) {
-        let Name = indexOne == index ? 'li' : 'lia';
+        let classNamea = indexOne == index ? 'li' : 'lia';
 
 
         return (
             <Link href={item.link} className={styles.page} key={item.id}>
-                <div className={styles.item} onClick={() => ClickSkip(index)}>
+                <div className={styles[classNamea]} onClick={() => ClickSkip(index)}>
                     <span className={`${styles.iconfonta} iconfont`}>{item.code}</span>
-                    <span className={styles[Name]}> {item.text}</span>
+                    <span className={styles.page}>{item.text}</span>
                 </div>
             </Link>
         )
@@ -57,10 +56,11 @@ export default function Header() {
 
     return (
         <div className={styles.header}>
-            <div className={styles.left}>
-                <span>zy 半江秋月</span>
+            <div className={styles.shadow}></div>
+            <div className={styles.name}>
+                <span className={styles.NameSpan}>  ZY 半江秋月</span>
             </div>
-            <div className={styles.right}>
+            <div className={styles.left}>
                 {count.map((item, index) => {
                     return (
                         NavigationItem(item, index)

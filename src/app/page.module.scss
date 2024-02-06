@@ -1,13 +1,18 @@
 .divs {
   width: 100%;
   height: 600px;
+  padding-top: 60px;
+  background-color: red;
 }
 
 .Page {
   height: 1700px;
   width: 100%;
   display: flex;
-
+  background-image: url("../assets/image/a.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   z-index: 999;
   .left {
     flex: 3;

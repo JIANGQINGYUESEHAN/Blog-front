@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4291187 */
-  src: url('iconfont.woff2?t=1698225756836') format('woff2'),
-       url('iconfont.woff?t=1698225756836') format('woff'),
-       url('iconfont.ttf?t=1698225756836') format('truetype');
+  src: url("iconfont.woff2?t=1707193951670") format("woff2"),
+    url("iconfont.woff?t=1707193951670") format("woff"),
+    url("iconfont.ttf?t=1707193951670") format("truetype");
 }
 
 .iconfont {
@@ -192,4 +192,3 @@
 .icon-a-024_wendang:before {
   content: "\e688";
 }
-

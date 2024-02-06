@@ -16,7 +16,7 @@
   z-index: 999;
 }
 .shadow:hover {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .name {
   width: 100px;
@@ -53,7 +53,7 @@
 .lia {
   width: 100px;
   height: 40px;
-  /* background-color: rgba(221, 227, 233, 0.5); */
+  background-color: rgba(221, 227, 233, 0.5);
   border-radius: 10px;
   margin: 0px 10px;
   line-height: 40px;
@@ -65,6 +65,7 @@
   font-family: "Courier New", Courier, monospace;
   display: inline-block;
   vertical-align: middle;
+  opacity: rgba(255, 255, 255, 0);
   color: grey;
 }
 

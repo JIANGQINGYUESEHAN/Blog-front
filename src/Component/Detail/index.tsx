@@ -10,6 +10,8 @@ interface IProps {
 
 }
 const Detail: FC<IProps> = (props) => {
+    console.log(props.iconfont);
+
     let { children, iconfont, name, height = 340, marginTop = 40, backgroundColor = `antiquewhite` } = props
     return (
         <div className={styles.Detail} style={{ height: `${height}px`, marginTop: `${marginTop}px`, backgroundColor: `${backgroundColor}` }}>

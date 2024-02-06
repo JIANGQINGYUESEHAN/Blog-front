@@ -1,0 +1,56 @@
+.header {
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: "100%";
+  z-index: 1000;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  .left {
+    width: 100px;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    font-family: fontFamily;
+  }
+  .right {
+    width: 460px;
+    height: 100%;
+
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    .item {
+      border-radius: 10px;
+      width: 70px;
+      height: 30px;
+
+      margin-right: 10px;
+      text-align: center;
+      line-height: 30px;
+      font-family: fontFamily;
+
+      .iconfonta {
+        font-size: 20px;
+
+        vertical-align: middle;
+      }
+      .li {
+        color: yellow;
+      }
+      .lia {
+        color: white;
+      }
+    }
+  }
+}
+.header:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}

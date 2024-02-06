@@ -1,2 +1,6 @@
 .LayOut {
+  background-image: url("../assets/image/a.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

@@ -1,25 +1,6 @@
 @font-face {
-  font-family: "iconfont";
-  src: url("../font_icon/iconfont.ttf") format("truetype"); /* 字体文件的路径 */
-}
-
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 12px; /* 调整图标大小 */
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@font-face {
-  font-family: "iconfonta";
-  src: url("../fonta/iconfont.ttf") format("truetype"); /* 字体文件的路径 */
-}
-
-.iconfont {
-  font-family: "iconfonta" !important;
-  font-size: 12px; /* 调整图标大小 */
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "fontFamily"; /* Project id 4291187 */
+  src: url("../fontFamily/AlimamaDaoLiTi.woff2") format("woff2"),
+    url("../fontFamily/AlimamaDaoLiTi.woff") format("woff"),
+    url("../fontFamily/AlimamaDaoLiTi.ttf") format("truetype");
 }

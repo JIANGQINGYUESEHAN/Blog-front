@@ -51,7 +51,7 @@ const ArticlePageRight: FC<IProps> = () => {
                 </div>
                 <div className={styles.footer}>
                     <div className={styles.Label}>
-                        <span className='iconfont' style={{ fontSize: '16px', verticalAlign: 'middle' }}> &#xe607;</span>
+                        <span className='iconfont' style={{ fontSize: '16px', verticalAlign: 'middle' }}> &#xe68a;</span>
                         <span> VUE</span>
                     </div>
 

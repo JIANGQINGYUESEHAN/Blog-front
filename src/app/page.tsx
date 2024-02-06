@@ -47,12 +47,12 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <div className={styles.divs}>
-        <button onClick={btnHandle}>滚动</button>
+        {/* <button onClick={btnHandle}>滚动</button> */}
       </div>
       <div className={styles.Page}>
         <div className={styles.left}>
           <Auth />
-          <Detail name={`分类`} iconfont='&#xe68b;' >
+          <Detail name={`分类`} iconfont='&#xe689;' >
             <ArticleList />
             <ArticleList />
             <ArticleList />
@@ -61,7 +61,7 @@ export default function Home() {
             <ArticleList />
           </Detail>
 
-          <Detail name={`推荐文章`} iconfont='&#xe6a5;' height={500} backgroundColor={`#bebeee`}>
+          <Detail name={`推荐文章`} iconfont='&#xe686;' height={500} backgroundColor={`#bebeee`}>
 
             <PageList />
             <PageList />
